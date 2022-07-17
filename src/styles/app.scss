@@ -1,0 +1,15 @@
+@import "Header";
+@import "Main";
+@import "Footer";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Semi Condensed";
+}
+body {
+  background-image: radial-gradient(hsl(215, 44%, 36%), hsl(237, 49%, 15%));
+  height: 100vh;
+}

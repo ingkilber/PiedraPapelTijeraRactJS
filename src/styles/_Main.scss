@@ -1,0 +1,612 @@
+main {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 900px) {
+    height: 80vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    background-image: url(./images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    @media (min-width: 585px) {
+      height: 100%;
+      max-width: 30rem;
+    }
+    @media (min-width: 900px) {
+      height: 100%;
+      max-width: 40rem;
+    }
+    @media (min-width: 1200px) {
+      height: 100%;
+      max-width: 60rem;
+    }
+    @media (min-width: 1600px) {
+      height: 80%;
+      max-width: 80rem;
+    }
+    .row1 {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+      .option {
+        width: 7rem;
+        height: 7rem;
+        background-color: hsl(215, 30%, 30%);
+        border-radius: 9999999px;
+        cursor: pointer;
+        @media (min-width: 585px) {
+          width: 8rem;
+          height: 8rem;
+        }
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+        }
+        @media (min-width: 1450px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5rem;
+        }
+      }
+      .paper {
+        border: 15px solid hsl(230, 89%, 62%);
+        background-image: url(./images/icon-paper.svg);
+        background-position: 40%;
+        background-repeat: no-repeat;
+        background-color: white;
+        transition: all 0.3s ease;
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+          border: 25px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 1200px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5.3rem;
+          border: 30px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 1400px) {
+          width: 17rem;
+          height: 17rem;
+          background-size: 7rem;
+          border: 40px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 2000px) {
+          width: 25rem;
+          height: 25rem;
+          background-size: 9rem;
+          border: 55px solid hsl(230, 89%, 62%);
+        }
+      }
+      .scissors {
+        border: 15px solid hsl(39, 89%, 49%);
+        background-image: url(./images/icon-scissors.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+        transition: all 0.3s ease;
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+          border: 25px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 1200px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5.3rem;
+          border: 30px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 1400px) {
+          width: 17rem;
+          height: 17rem;
+          background-size: 7rem;
+          border: 40px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 2000px) {
+          width: 25rem;
+          height: 25rem;
+          background-size: 9rem;
+          border: 55px solid hsl(39, 89%, 49%);
+        }
+      }
+      .spock {
+        border: 15px solid hsl(189, 59%, 53%);
+        background-image: url(./images/icon-spock.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+        transition: all 0.3s ease;
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+          border: 25px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 1200px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5.3rem;
+          border: 30px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 1400px) {
+          width: 17rem;
+          height: 17rem;
+          background-size: 7rem;
+          border: 40px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 2000px) {
+          width: 25rem;
+          height: 25rem;
+          background-size: 9rem;
+          border: 55px solid hsl(189, 59%, 53%);
+        }
+      }
+    }
+    .row2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      .rock {
+        width: 7rem;
+        height: 7rem;
+        background-color: white;
+        border-radius: 9999999px;
+        border: 15px solid hsl(349, 71%, 52%);
+        background-image: url(./images/icon-rock.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 2rem;
+        background-color: white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        @media (min-width: 585px) {
+          width: 8rem;
+          height: 8rem;
+        }
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+          border: 25px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 1200px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5.3rem;
+          border: 30px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 1400px) {
+          width: 17rem;
+          height: 17rem;
+          background-size: 7rem;
+          border: 40px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 2000px) {
+          width: 25rem;
+          height: 25rem;
+          background-size: 9rem;
+          border: 55px solid hsl(349, 71%, 52%);
+        }
+      }
+      .lizard {
+        width: 7rem;
+        height: 7rem;
+        background-color: white;
+        border-radius: 9999999px;
+        border: 15px solid hsl(261, 73%, 60%);
+        background-image: url(./images/icon-lizard.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 2rem;
+        background-color: white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        @media (min-width: 585px) {
+          width: 8rem;
+          height: 8rem;
+        }
+        @media (min-width: 900px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 4rem;
+          border: 25px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 1200px) {
+          width: 12rem;
+          height: 12rem;
+          background-size: 5.3rem;
+          border: 30px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 1400px) {
+          width: 17rem;
+          height: 17rem;
+          background-size: 7rem;
+          border: 40px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 2000px) {
+          width: 25rem;
+          height: 25rem;
+          background-size: 9rem;
+          border: 55px solid hsl(261, 73%, 60%);
+        }
+      }
+    }
+  }
+  .container-result {
+    background-image: none;
+    width: 80%;
+    @media (min-width: 585px) {
+      height: 100%;
+      max-width: 35rem;
+    }
+    @media (min-width: 900px) {
+      max-width: 50rem;
+    }
+    @media (min-width: 1200px) {
+      max-width: 60rem;
+    }
+    .row1-result {
+      justify-content: space-between;
+      height: 250%;
+      .option {
+        cursor: default;
+        @media (min-width: 585px) {
+          width: 10rem;
+          height: 10rem;
+          background-size: 5rem;
+        }
+        @media (min-width: 900px) {
+          width: 15rem;
+          height: 15rem;
+          background-size: 6rem;
+        }
+        @media (min-width: 1200px) {
+          margin-top: 1.5rem !important;
+          width: 20rem;
+          height: 20rem;
+          background-size: 8rem;
+        }
+        @media (min-width: 1400px) {
+          margin-top: 0 !important;
+        }
+      }
+      .paper {
+        @media (min-width: 585px) {
+          border: 20px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 900px) {
+          border: 30px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 1200px) {
+          border: 40px solid hsl(230, 89%, 62%);
+        }
+      }
+      .scissors {
+        @media (min-width: 585px) {
+          border: 20px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 900px) {
+          border: 30px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 1200px) {
+          border: 40px solid hsl(39, 89%, 49%);
+        }
+      }
+      .rock {
+        @media (min-width: 585px) {
+          border: 20px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 900px) {
+          border: 30px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 1200px) {
+          border: 40px solid hsl(349, 71%, 52%);
+        }
+      }
+      .spock {
+        @media (min-width: 585px) {
+          border: 20px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 900px) {
+          border: 30px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 1200px) {
+          border: 40px solid hsl(189, 59%, 53%);
+          background-position: 4rem;
+        }
+      }
+      .lizard {
+        @media (min-width: 585px) {
+          border: 20px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 900px) {
+          border: 30px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 1200px) {
+          border: 40px solid hsl(261, 73%, 60%);
+        }
+      }
+    }
+    .row-p {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: white;
+      @media (min-width: 900px) {
+        position: relative;
+        bottom: 80%;
+        margin-left: 2rem;
+        p {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+      }
+      @media (min-width: 1200px) {
+        bottom: 85%;
+        margin-left: 4rem;
+        margin-right: 3rem;
+      }
+      p {
+        margin-left: 1.5rem;
+        @media (min-width: 585px) {
+          margin-left: 3rem;
+        }
+        @media (min-width: 900px) {
+          margin-left: 1.5rem;
+        }
+      }
+      :nth-child(2) {
+        @media (min-width: 585px) {
+          margin: 0 1.5rem 0 0;
+        }
+        @media (min-width: 900px) {
+          margin: 0 0.7rem 0 0;
+        }
+      }
+    }
+    .row2-result {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      @media (min-width: 900px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-size: 3.5rem;
+        @media (min-width: 900px) {
+          margin-top: 8rem;
+        }
+      }
+      button {
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        padding: 0.7rem 3.5rem;
+        border: none;
+        border-radius: 7px;
+        background-color: white;
+        color: hsl(229, 25%, 31%);
+        margin-top: 0.7rem;
+        cursor: pointer;
+        @media (min-width: 1200px) {
+          padding: 1rem 4.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .bonus {
+    background-image: url(./images/bg-pentagon.svg);
+    // background-size: 50% 55%;
+    // background-position: 50% 40%;
+    @media (max-height: 570px) {
+      background-size: 50% 70%;
+    }
+    @media (min-width: 900px) {
+    }
+    @media (min-width: 1200px) {
+      background-size: 40% 60%;
+      background-position: 50% 47%;
+    }
+    .row1 {
+      position: relative;
+      top: 1.5rem;
+      @media (min-width: 585px) {
+        height: 80%;
+      }
+      .scissors {
+        border: 15px solid hsl(39, 89%, 49%);
+        width: 6rem;
+        height: 6rem;
+        background-size: 2.5rem;
+        @media (min-width: 900px) {
+          width: 8rem;
+          height: 8rem;
+          border: 20px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 1200px) {
+          width: 9rem;
+          height: 9rem;
+          background-size: 3.5rem;
+          border: 25px solid hsl(39, 89%, 49%);
+        }
+        @media (min-width: 1400px) {
+          width: 11rem;
+          height: 11rem;
+        }
+        @media (min-width: 2000px) {
+          width: 18rem;
+          height: 18rem;
+          background-size: 7rem;
+          border: 40px solid hsl(39, 89%, 49%);
+        }
+      }
+    }
+    .medium {
+      top: 0;
+      width: 90%;
+      margin: 0 auto;
+      @media (min-width: 585px) {
+      }
+      @media (min-width: 900px) {
+      }
+      @media (min-width: 1200px) {
+        width: 70%;
+      }
+      @media (min-width: 1400px) {
+      }
+      @media (min-width: 2000px) {
+      }
+      .spock {
+        border: 15px solid hsl(189, 59%, 53%);
+        width: 6rem;
+        height: 6rem;
+        background-size: 2.5rem;
+        background-position: 1rem;
+        @media (min-width: 900px) {
+          width: 8rem;
+          height: 8rem;
+          background-position: 1.5rem;
+          border: 20px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 1200px) {
+          width: 9rem;
+          height: 9rem;
+          background-size: 3rem;
+          background-position: 1.7rem;
+          border: 25px solid hsl(189, 59%, 53%);
+        }
+        @media (min-width: 1400px) {
+          width: 11rem;
+          height: 11rem;
+          background-position: 2.6rem;
+        }
+        @media (min-width: 2000px) {
+          width: 18rem;
+          height: 18rem;
+          background-size: 7rem;
+          background-position: 3.5rem;
+          border: 40px solid hsl(189, 59%, 53%);
+        }
+      }
+      .paper {
+        border: 15px solid hsl(230, 89%, 62%);
+        width: 6rem;
+        height: 6rem;
+        background-size: 2.5rem;
+        @media (min-width: 900px) {
+          width: 8rem;
+          height: 8rem;
+          border: 20px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 1200px) {
+          width: 9rem;
+          height: 9rem;
+          background-size: 3rem;
+          border: 25px solid hsl(230, 89%, 62%);
+        }
+        @media (min-width: 1400px) {
+          width: 11rem;
+          height: 11rem;
+        }
+        @media (min-width: 2000px) {
+          width: 18rem;
+          height: 18rem;
+          background-size: 7rem;
+          border: 40px solid hsl(230, 89%, 62%);
+        }
+      }
+    }
+    .row2 {
+      width: 60%;
+      min-width: 12rem;
+      margin: 0.5rem auto 1rem auto;
+      justify-content: space-around;
+      @media (min-width: 585px) {
+      }
+      @media (min-width: 900px) {
+        width: 55%;
+      }
+      @media (min-width: 1200px) {
+        width: 50%;
+      }
+      @media (min-width: 1400px) {
+      }
+      @media (min-width: 2000px) {
+      }
+      .rock {
+        border: 15px solid hsl(349, 71%, 52%);
+        width: 6rem;
+        height: 6rem;
+        background-size: 2.5rem;
+        @media (min-width: 900px) {
+          width: 8rem;
+          height: 8rem;
+          border: 20px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 1200px) {
+          width: 9rem;
+          height: 9rem;
+          background-size: 3rem;
+          border: 25px solid hsl(349, 71%, 52%);
+        }
+        @media (min-width: 1400px) {
+          width: 11rem;
+          height: 11rem;
+        }
+        @media (min-width: 2000px) {
+          width: 18rem;
+          height: 18rem;
+          background-size: 7rem;
+          border: 40px solid hsl(349, 71%, 52%);
+        }
+      }
+      .lizard {
+        border: 15px solid hsl(261, 73%, 60%);
+        width: 6rem;
+        height: 6rem;
+        background-size: 2.5rem;
+        @media (min-width: 900px) {
+          width: 8rem;
+          height: 8rem;
+          border: 20px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 1200px) {
+          width: 9rem;
+          height: 9rem;
+          background-size: 3rem;
+          border: 25px solid hsl(261, 73%, 60%);
+        }
+        @media (min-width: 1400px) {
+          width: 11rem;
+          height: 11rem;
+        }
+        @media (min-width: 2000px) {
+          width: 18rem;
+          height: 18rem;
+          background-size: 7rem;
+          border: 40px solid hsl(261, 73%, 60%);
+        }
+      }
+    }
+  }
+}

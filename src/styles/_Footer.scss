@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  .btn {
+    width: 30%;
+    padding: 0.5rem 0;
+    border: 3px solid hsl(217, 16%, 45%);
+    background: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 1rem;
+    @media (min-width: 585px) {
+      max-width: 8rem;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+  .btn-bonus {
+    text-decoration: none;
+    text-align: center;
+    @media (min-width: 585px) {
+      left: 1rem;
+      right: 0;
+    }
+  }
+}
