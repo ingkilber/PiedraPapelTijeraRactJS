@@ -4,6 +4,7 @@ import Game from "./pages/Game";
 import GameBonus from "./pages/GameBonus";
 import "./styles/app.css";
 
+//Crear rutas
 function App() {
   return (
     <Router>
